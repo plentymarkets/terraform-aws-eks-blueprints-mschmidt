@@ -76,6 +76,8 @@ module "aws_eks" {
   cluster_encryption_config        = var.enable_cluster_encryption ? local.cluster_encryption_config : []
   cluster_identity_providers       = var.cluster_identity_providers
 
+  create_cni_ipv6_iam_policy = var.create_cni_ipv6_iam_policy
+
   tags = var.tags
 }
 

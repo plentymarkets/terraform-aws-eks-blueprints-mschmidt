@@ -192,6 +192,12 @@ variable "cluster_service_ipv6_cidr" {
   default     = null
 }
 
+variable "create_cni_ipv6_iam_policy" {
+  description = "Determines whether to create an IAM policy for CNI IPv6"
+  type        = bool
+  default     = false
+}
+
 #-------------------------------
 # EKS Cluster CloudWatch Logging
 #-------------------------------
